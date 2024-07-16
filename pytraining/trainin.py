@@ -13,9 +13,23 @@ trainees[1][0]=8
 print(trainees)
 
 #Remove John and Mary from the list
+trainees.remove("john")
+print(trainees)
+numbers=[1,2,4,5]
+print(trainees[1])
 
+trainees=["john",[2, ["James","Mary"]]]
+trainees[1][1].remove("Mary")
+print(trainees)
 
-
+trainees=["john",[2, ["James","Mary"]]]
+trainees[1][1].reverse()
+print(trainees)
 #Using a function,determine the length of the list
 length=len(trainees)
 #print(length)
+trainees=["john",[2, ["James","Mary"]]]
+trainees[1][1][0]="Mary"
+print(trainees)
+trainees[1][1][1]="James"
+print(trainees)
