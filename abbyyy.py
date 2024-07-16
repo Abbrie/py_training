@@ -21,7 +21,7 @@ if len(password2)>0:
         print("Incorrect password")
 else:
     print("Please enter your password")
-e
+
 
 temperature=int(input("Enter temp in degrees celsius; "))
-if temperature>=0 and temperature<=100:
+#if temperature>=0 and temperature
