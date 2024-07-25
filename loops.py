@@ -4,9 +4,9 @@ numbers=list(range(1,51))
 #number 3
 values=list(range(10,41))
 sum_of_values=sum(values)
-#print(sum_of_values)
+print(sum_of_values)
 average_of_values=sum_of_values/len(values)
-#print(average_of_values)
+print(average_of_values)
 
 #number 4
 #number 5
@@ -28,7 +28,7 @@ for i in range(1,11):
     if numbers==numbers * i:
         numbers +=1
         table.append(numbers)
-        #print(numbers)
+        print(numbers)
 
 
 #number4
@@ -48,7 +48,7 @@ for i in numbers:
     if i%7==0 or i%5==0:
 
      divisible_by_7_or_5.append(i)
-print(divisible_by_7_or_5)
+#print(divisible_by_7_or_5)
 
       
     
