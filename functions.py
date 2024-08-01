@@ -33,22 +33,24 @@ def calculate_total(maths,eng,kisw,sci,soc):
     return maths+eng+kisw+sci+soc
 
 def calculate_average(total):
-    return total/5
+    #return total/5
 
 def grade(average):
-    if average>79:
+    if average>=79 and average<=100:
         return "A"
-    elif 60<= average< 79:
+    elif average>= 60  and average<79:
         return "B"
-    elif 50<=average<60:
+    elif average<=59 and average>49:
         return "C"
-    elif 40<= average< 50:
+    elif average<= 49 and average>=40:
         return "D"
     else:
         return "E"
     
-
-def main():
+        
+        
+        
+def main ():
     maths=int(input("Enter marks for Maths: "))
     eng=int(input("Enter marks for English:"))
     kisw=int(input("Enter marks for Kiswahili: "))
@@ -62,6 +64,44 @@ def main():
     print(f"Total Marks:{total}")
     print(f"Average Marks:{average}")
     print(f"Grade: {grade}")
+
+
+#python program to display all numbers within a range except prime numbers
+collection=range(1,31)
+def non_prime(collection):
+    for i in collection:
+        if i % 2!=0:
+            pass
+        else:
+            return non_prime
+        
+non_prime_numbers=non_prime
+print(non_prime_numbers)
+            
+    
+
+ 
+
+
+
+
+        
+    
+        
+
+
+
+
+
+
+
+
+        
+
+
+
+
+        
 
 
 
