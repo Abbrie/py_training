@@ -1,30 +1,30 @@
 
 
 #number3
-def sum_and_average(x,y):
-    values=list(range(x,y+1))
+#def sum_and_average(x,y):
+    #values=list(range(x,y+1))
     
-    total_sum=sum(values)
-    average=total_sum/len(values)
-    return total_sum,average
+    #total_sum=sum(values)
+    #average=total_sum/len(values)
+    #return total_sum,average
 #print(sum_and_average(10,41)
 
 
 #number5
-def multiplication_table(number):
-    table=[]
-    for  i in range(1,11):
-        table.append(f"{number} x {i}={number * i}")
-        return table
+#def multiplication_table(number):
+    #table=[]
+    #for  i in range(1,11):
+        #table.append(f"{number} x {i}={number * i}")
+        #return table
 #numbers=int(input("Enter number: "))
 #print(multiplication_table(numbers))
 
 #number6
-number=list(range(1,51))
-def even_numbers(number):
-    if number%2==0:
-        print(even_numbers)
-    return even_numbers
+#number=list(range(1,51))
+#def even_numbers(number):
+    #if number%2==0:
+      #  print(even_numbers)
+    #return even_numbers
 
 
 
@@ -33,19 +33,19 @@ def calculate_total(maths,eng,kisw,sci,soc):
     return maths+eng+kisw+sci+soc
 
 def calculate_average(total):
-    #return total/5
+    return total/5
 
 def grade(average):
     if average>=79 and average<=100:
-        return "A"
+        grade "A"
     elif average>= 60  and average<79:
-        return "B"
+        grade "B"
     elif average<=59 and average>49:
-        return "C"
+        grade "C"
     elif average<= 49 and average>=40:
-        return "D"
+        grade "D"
     else:
-        return "E"
+        grade "E"
     
         
         
@@ -67,16 +67,16 @@ def main ():
 
 
 #python program to display all numbers within a range except prime numbers
-collection=range(1,31)
-def non_prime(collection):
-    for i in collection:
-        if i % 2!=0:
-            pass
-        else:
-            return non_prime
+#collection=range(1,31)
+#def non_prime(collection):
+    #for i in collection:
+       # if i % 2!=0:
+            #pass
+        #else:
+            #return non_prime
         
-non_prime_numbers=non_prime
-print(non_prime_numbers)
+#non_prime_numbers=non_prime
+#print(non_prime_numbers)
             
     
 

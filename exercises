@@ -1,0 +1,15 @@
+
+
+#TASK 8
+prods=[['omo', '30kshs','300'],['milk', '50kshs', '200'],['bread', '45kshs','359'],['coffee','5kshs','79']]
+def calculate_total_stock(x):
+    total_stock=0
+    for i in prods:
+        stock=int(i[-1])
+        total_stock+=stock
+    return total_stock
+
+total=calculate_total_stock(prods)
+print(total)
+
+        
