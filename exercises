@@ -1,15 +1,19 @@
 
 
-#TASK 8
-prods=[['omo', '30kshs','300'],['milk', '50kshs', '200'],['bread', '45kshs','359'],['coffee','5kshs','79']]
-def calculate_total_stock(x):
-    total_stock=0
-    for i in prods:
-        stock=int(i[-1])
-        total_stock+=stock
-    return total_stock
-
-total=calculate_total_stock(prods)
-print(total)
-
+email="admin@mail.com"
+password="Admin@123"
+correct_email=input("Enter enail address:")
+correct_password=input("Enter password")
+def login(x,y):
+    attempts=3
+    for attempt in range(attempts):
+        if x==email and y==password:
+            result="Login sucessful!"
+            return result
         
+    else:
+        print(f"Invalid username or password.Attempts left:{attempts-attempt-1}")
+    print("You have been blocked")
+
+users_input=login(correct_email,correct_password)
+print(users_input)
