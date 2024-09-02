@@ -37,15 +37,16 @@ def calculate_average(total):
 
 def grade(average):
     if average>=79 and average<=100:
-        grade "A"
+        grade= "A"
     elif average>= 60  and average<79:
-        grade "B"
+        grade="B"
     elif average<=59 and average>49:
-        grade "C"
+        grade="C"
     elif average<= 49 and average>=40:
-        grade "D"
+        grade= "D"
     else:
-        grade "E"
+        grade= "E"
+    return grade
     
         
         

@@ -2,7 +2,7 @@
 base=float(input("Enter base: "))
 height=float(input("Enter height:"))
 def area_of_triangle(x,y):
-    area=x*y/2
+    area=((x*y)/2)
     return area
 
 full_area=area_of_triangle(base,height)
@@ -23,11 +23,25 @@ print(num)
 
 
 #TASK 3
-#phone_number=int(input("Enter phone number:"))
-#def phonenumber(x):
-    #if [:3] in x== +254:
-       # pass
-    #elif [:]
+phone_number=input("Enter phone number: ")
+def validate_phone_number(x):
+    if x [:4]=="+254":
+        result=x
+    elif x[:2]=="07":
+        result="+254" + x[1:]
+    elif x[:3]=="254":
+        result="+" + x
+    elif x[:2]== "01":
+        result= "+254" + x[1:]
+    elif x[0]=="1":
+        result="+254" + x
+    else:
+        result="Invalid phone number"
+    
+    return result
+
+formatted_number=validate_phone_number(phone_number)
+print(formatted_number)
         
 
 
@@ -109,9 +123,10 @@ def check_speed(x):
     speed_limit=70
     if x<=speed_limit:
         check="ok"
-    else:
+    else: 
         demerit_points=(x-speed_limit)//5
         check=(f"points are: {demerit_points}")
+        check="Lisence suspended"
     return check
 
 points=check_speed(speed)
@@ -119,13 +134,14 @@ print(points)
 
 #TASK 9
 rows=int(input("Enter number of rows: "))
+star="*"
 def star_rows(x):
-    for i in range(1,x+1):
-        final="*" * i
+    for i in range(x):
+        final=star * i
     return final
 
-star=star_rows(rows)
-print(star)
+stars=star_rows(rows)
+print(stars)
         
 #TASK 10
 prods=[['omo', '30kshs','300'],['milk', '50kshs', '200'],['bread', '45kshs','359'],['coffee','5kshs','79']]
@@ -141,7 +157,29 @@ print(total)
 
 
 #TASK 11
+#TASK 13
+email="admin@mail.com"
+password="Admin@123"
+correct_email=input("Enter enail address:")
+correct_password=input("Enter password")
+def login(x,y):
+    attempts=3
+    for attempt in range(attempts):
+        if x==email and y==password:
+            result="Login sucessful!"
+            return result
+        
+        else:
+            print(f"Invalid username or password.Attempts left:{attempts-attempt-1}")
+    print("You have been blocked")
 
+users_input=login(correct_email,correct_password)
+print(users_input)
+
+
+#task 14
+
+    
 
 
 
